@@ -27,8 +27,9 @@
 		<!-- campo confirmacion contrasena -->
 		<span *ngIf="passwordValidationRegistro.touched && !passwordValidationRegistro.valid || Data.password != Data.passwordValidation" class="alert">debe ser igual a la contraseña</span>
 		<input type="password" name="passwordValidation" placeholder="confirma tu contraseña" #passwordValidationRegistro="ngModel" [(ngModel)]="Data.passwordValidation" required />
-
-		
+		<!-- campo poder -->
+		<span *ngIf="poder.touched && !poder.valid" class="alert">¿Que poder tienes?</span>
+		<input type="text" name="poder" placeholder="nombre del poder" #PoderRegistro="ngModel" [(ngModel)]="Data.poder" required minlength="5" maxlength="30"  />
 		<!-- campo eleccion team -->
 		<span *ngIf="!team.valid" class="alert">por favor ponga su genero coso, cosa o queso que sea</span>
 		

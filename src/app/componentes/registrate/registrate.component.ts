@@ -25,6 +25,7 @@ export class RegistrateComponent implements OnInit {
   }
    
   onSubmit() {
+    
     this.Data.roles="Poster";
     this.service.newUser(this.Data).subscribe(
       result => {

@@ -6,6 +6,7 @@ export class RegistroUsuario {
 	public password:String;
 	public passwordValidation:String;
 	public age:Number;
+	public poder:String;
 	public team:String;
 	public roles:String;
 	constructor(){

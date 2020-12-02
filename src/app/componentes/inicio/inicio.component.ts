@@ -12,9 +12,11 @@ export class InicioComponent implements OnInit {
   public subtitle:String;
   public img;
   constructor() { 
-  	this.title="chamberpost";
-  	this.subtitle="nos reservamos los derechos de copyright en cualquier cosa que salga";
+   	this.title="La paz no es sinonimo de vida";
+  	this.subtitle="La asociación de héroes de la ciudad Z";
   	
+
+  
 
   }
 
